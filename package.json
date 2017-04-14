@@ -24,11 +24,12 @@
     "good-console": "^6.1.2",
     "good-squeeze": "^4.0.0",
     "hapi": "^14.2.0",
-    "inert": "^4.0.2"
-  },
-  "devDependencies": {
+    "inert": "^4.0.2",
     "angular": "^1.4.7",
     "node-sass": "^3.13.0",
+    "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
     "nodemon": "^1.11.0"
   }
 }
