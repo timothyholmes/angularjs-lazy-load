@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/timothyholmes/angularjs-lazy-load.git"
   },
   "author": "Tim Holmes",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/timothyholmes/angularjs-lazy-load/issues"
   },
   "dependencies": {
     "good": "^7.0.1",

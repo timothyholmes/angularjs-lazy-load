@@ -1,14 +1,8 @@
-# Personal Website
+# AngularJS Lazy Load
 
-[Live version here](http://timholm.es/)
+Proof of Concept for lazy loading AngularJS ui components
 
-### Build + start server
-
-```shell
-npm run deploy
-```
-
-### Dev scripts
+### npm scripts
 
 Watch sass
 
