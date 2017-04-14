@@ -1,0 +1,34 @@
+{
+  "name": "angularjs-lazy-load",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "watch-sass": "nodemon -e scss -w lib/src/scss -x 'npm run build-sass'",
+    "build-sass": "node-sass --output-style nested lib/src/scss/main.scss lib/src/css/main.css",
+    "deploy": "npm run build-sass && npm start",
+    "clean": "rm -r lib/src/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Tim Holmes",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "dependencies": {
+    "good": "^7.0.1",
+    "good-console": "^6.1.2",
+    "good-squeeze": "^4.0.0",
+    "hapi": "^14.2.0",
+    "inert": "^4.0.2"
+  },
+  "devDependencies": {
+    "angular": "^1.4.7",
+    "node-sass": "^3.13.0",
+    "nodemon": "^1.11.0"
+  }
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lazy Load Proof</title>
+
+        <link href='lib/src/css/main.css' rel='stylesheet'>
+    </head>
+
+    <body
+        class="content"
+        data-ng-app="lazyLoadProof">
+
+        <header class="title">
+            Lazy Load
+        </header>
+
+        <div lazy-loader
+            class="color-block top">
+        </div>
+
+        <div lazy-loader
+            class="color-block middle">
+        </div>
+
+        <div lazy-loader
+            class="color-block bottom">
+        </div>
+
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="lib/src/js/main.js"></script>
+    </body>
+</html>
