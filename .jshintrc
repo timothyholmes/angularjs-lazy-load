@@ -17,6 +17,7 @@
   "sub": true,
   "esversion": 6,
   "globals": {
-      "angular": true
+      "angular": true,
+      "Waypoint": true
   }
 }

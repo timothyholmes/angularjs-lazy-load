@@ -6,6 +6,11 @@ $block-height: 750px;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    min-height: 2000px;
+
+    .waypoint-wrapper {
+        min-height: 100px;
+    }
 
     .title {
 

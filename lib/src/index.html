@@ -6,15 +6,28 @@
         <link href='lib/src/css/main.css' rel='stylesheet'>
     </head>
 
-    <body
-        class="content"
-        data-ng-app="lazyLoadProof">
+    <body class="content"
+        data-ng-app="lazyLoadProof"
+        data-ng-controller="mainController as mainCtrl">
 
         <header class="title">
             Lazy Load
         </header>
 
-        <color-block></color-block>
+        <div class="waypoint-wrapper">
+            <waypoint class="waypoint" data-callback="mainCtrl.toggleColorBlock" data-position="top"></waypoint>
+            <color-block data-ng-if="showOptions.top"></color-block>
+        </div>
+
+        <div class="waypoint-wrapper">
+            <waypoint class="waypoint" data-callback="mainCtrl.toggleColorBlock" data-position="middle"></waypoint>
+            <color-block data-ng-if="showOptions.middle"></color-block>
+        </div>
+
+        <div class="waypoint-wrapper">
+            <waypoint class="waypoint" data-callback="mainCtrl.toggleColorBlock" data-position="bottom"></waypoint>
+            <color-block data-ng-if="showOptions.bottom"></color-block>
+        </div>
 
         <script src="node_modules/angular/angular.min.js"></script>
         <script src="node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
