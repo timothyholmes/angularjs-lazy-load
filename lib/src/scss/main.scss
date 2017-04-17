@@ -9,7 +9,7 @@ $block-height: 750px;
     min-height: 2000px;
 
     .waypoint-wrapper {
-        min-height: 100px;
+        min-height: $block-height;
     }
 
     .title {
@@ -47,7 +47,7 @@ $block-height: 750px;
 
         &.bottom {
 
-            background-color: #cb9f1e;
+            background-color: #f0cf60;
         }
     }
 }
