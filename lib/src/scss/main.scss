@@ -35,14 +35,19 @@ $block-height: 750px;
             background-color: #ff1173;
         }
 
-        &.middle {
+        &.upperMiddle {
 
             background-color: #66acff;
         }
 
-        &.bottom {
+        &.lowerMiddle {
 
             background-color: #5eff69;
+        }
+
+        &.bottom {
+
+            background-color: #cb9f1e;
         }
     }
 }

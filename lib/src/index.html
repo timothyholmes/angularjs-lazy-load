@@ -15,19 +15,22 @@
         </header>
 
         <div class="waypoint-wrapper">
-            <waypoint class="waypoint" data-callback="mainCtrl.toggleColorBlock" data-position="top"></waypoint>
-            <color-block data-ng-if="showOptions.top"></color-block>
+            <!-- Calling the middle block for rendering here because we want the top to always show, and then load the rest of the blocks as needed -->
+            <waypoint class="waypoint" data-callback="mainCtrl.renderBlock" data-position="upperMiddle"></waypoint>
+            <color-block data-position="top"></color-block>
         </div>
 
         <div class="waypoint-wrapper">
-            <waypoint class="waypoint" data-callback="mainCtrl.toggleColorBlock" data-position="middle"></waypoint>
-            <color-block data-ng-if="showOptions.middle"></color-block>
+            <waypoint class="waypoint" data-callback="mainCtrl.renderBlock" data-position="lowerMiddle"></waypoint>
+            <color-block data-ng-if="showOptions.upperMiddle" data-position="upperMiddle"></color-block>
         </div>
 
         <div class="waypoint-wrapper">
-            <waypoint class="waypoint" data-callback="mainCtrl.toggleColorBlock" data-position="bottom"></waypoint>
-            <color-block data-ng-if="showOptions.bottom"></color-block>
+            <waypoint class="waypoint" data-callback="mainCtrl.renderBlock" data-position="bottom"></waypoint>
+            <color-block data-ng-if="showOptions.lowerMiddle" data-position="lowerMiddle"></color-block>
         </div>
+
+        <color-block data-ng-if="showOptions.bottom" data-position="bottom"></color-block>
 
         <script src="node_modules/angular/angular.min.js"></script>
         <script src="node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
